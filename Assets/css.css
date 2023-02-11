@@ -1,0 +1,71 @@
+.pd {
+    padding: 5px;
+}
+
+.contenido {
+    margin-top: 80px;
+}
+
+table.dataTable,
+.dataTables_wrapper  {
+    font-size: 14px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input  {
+    padding: 0!important;
+}
+
+input:focus-visible {
+    outline-offset: 0px;
+    outline: none
+}
+
+/* sweetAlert */
+.swal2-height-auto > .swal2-container.swal2-backdrop-show {
+    background: #343b40e3 !important
+}
+
+.swal2-modal {
+    width: 400px !important;
+}
+
+.swal2-actions > button {
+    padding: 5px 9px 5px 9px !important;
+    font-size: 13px !important;
+}
+
+.swal2-html-container {
+    font-size: 14px !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: orange !important;
+    color: orange !important;
+}
+
+.swal2-static {
+    transform: scale(1.02) !important;
+}
+
+label.invalid-feedback {
+    font-size: 12px;
+}
+
+.form-control.is-invalid:focus, 
+.was-validated .form-control:invalid:focus {
+    border-color: #dc3545;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow:none;
+}
+
+.form-control.is-valid:focus, 
+.was-validated .form-control:valid:focus {
+    border-color: #198754;
+    box-shadow: none;
+}
