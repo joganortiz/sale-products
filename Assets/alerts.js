@@ -1,9 +1,9 @@
-const toastSwal = async (icon, text = "") => {
+const toastSwal = async (icon, text = "", positions = "top-end") => {
     if(icon != "success" && icon != "error" && icon != "warning" && icon != "info" && icon != "question") return false;
 
     const Toast = Swal.mixin({
         toast: true,
-        position: 'top-end',
+        position: positions,
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true,

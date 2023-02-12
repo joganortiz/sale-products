@@ -69,3 +69,26 @@ label.invalid-feedback {
     border-color: #198754;
     box-shadow: none;
 }
+
+.card-body {
+    padding: 1px 5px 10px 5px;
+}
+
+.product-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.total {
+    position: fixed;
+    right: 46px;
+    top: 5px;
+    font-size: 15px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: auto;
+    font-weight: 600;
+    padding: 3px;
+    display: none;
+}

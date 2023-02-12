@@ -1,7 +1,6 @@
 
 document.write(`<script src="${base_url}/Assets/datatable.js"></script>`);
 document.write(`<script src="${base_url}/Assets/alerts.js"></script>`);
-var idProducto = '';
 $(document).ready(function () {
     $("nav a:nth-of-type(2)").hide();
     $("nav .offcanvas-end, nav button").remove();
@@ -11,7 +10,7 @@ $(document).ready(function () {
     $("button[data-control=category]").click(function (e) { 
         cleanForm("formCategory");
         $("#category .modal-header h5").html("Crear Categoría");
-        validateFieldsCategory()
+        validateFieldsCategory();
     });
 
     $("button[data-control=product]").click(function (e) { 
@@ -631,5 +630,6 @@ const cleanForm = (idForm = "") => {
     if( idForm == "") return false;
 
     $(`#${idForm} .form-control`).removeClass("is-invalid").removeClass("is-valid");
-    document.getElementById(idForm).reset()
+    document.getElementById(idForm).reset();
+    $(`#${idForm} input[type=hidden]`).val("");
 }

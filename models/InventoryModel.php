@@ -8,9 +8,9 @@
          */
         public function getProducts($data) {
             $columns = array(
-                ""  => "fecha",
+                ""  => "date_format(p.date_created, '%d-%m-%Y %H:%i:%s')",
                 "0" => "nombre",
-                "1"  => "referencia",
+                "1" => "referencia",
                 "2" => "precio",
                 "3" => "peso",
                 "4" => "categoria",

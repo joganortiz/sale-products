@@ -80,7 +80,8 @@
 <?= Helpers::footer() ?>
 
 <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="<?= Helpers::media(); ?>/jquery-validation/jquery.validate.min.js"></script>
+<script src="<?= Helpers::media(); ?>/jquery-validation/additional-methods.min.js"></script>
 <script src="<?= Helpers::media(); ?>/inventory.js"></script>
 
 <!-- Modal Productos-->
@@ -110,13 +111,13 @@
                         <div class="col-12 col-md-6">
                             <label class="col-12 control-label">Precio <span class="text-danger">*</span>:</label>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control"  name="txtPrice" id="txtPrice" placeholder="Referencia del producto" autocomplete="off">
+                                <input type="text" class="form-control"  name="txtPrice" id="txtPrice" placeholder="Precio del producto" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <label class="col-12 control-label">Peso <span class="text-danger">*</span>:</label>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control"  name="txtWeight" id="txtWeight" placeholder="Referencia del producto" autocomplete="off">
+                                <input type="text" class="form-control"  name="txtWeight" id="txtWeight" placeholder="Peso del producto" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -129,7 +130,7 @@
                         <div class="col-12 col-md-6">
                             <label class="col-12 control-label">stock <span class="text-danger">*</span>:</label>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control"  name="txtStock" id="txtStock" placeholder="Referencia del producto" autocomplete="off">
+                                <input type="text" class="form-control"  name="txtStock" id="txtStock" placeholder="Stock del producto" autocomplete="off">
                             </div>
                         </div>
                     </div>
