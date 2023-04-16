@@ -1,4 +1,4 @@
-# pruebaConekta
+# sale-products
 
 ## consultas
 #### Consulta para saber cuál producto tiene más Stock
